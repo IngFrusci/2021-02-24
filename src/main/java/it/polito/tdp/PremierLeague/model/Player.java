@@ -3,11 +3,15 @@ package it.polito.tdp.PremierLeague.model;
 public class Player {
 	Integer playerID;
 	String name;
+	double peso;
 	
 	public Player(Integer playerID, String name) {
 		super();
 		this.playerID = playerID;
 		this.name = name;
+	}
+	public Player() {
+		
 	}
 	
 	public Integer getPlayerID() {
@@ -22,6 +26,13 @@ public class Player {
 	public void setName(String name) {
 		this.name = name;
 	}
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
 
 	@Override
 	public int hashCode() {
@@ -30,7 +41,6 @@ public class Player {
 		result = prime * result + ((playerID == null) ? 0 : playerID.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
