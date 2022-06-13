@@ -62,8 +62,7 @@ public class FXMLController {
     	txtResult.clear();
     	int N = Integer.parseInt(txtN.getText());
     	Match m = cmbMatch.getValue();
-    	
-    	txtResult.appendText(this.model.simula(N, m));
+    	txtResult.setText(this.model.simula(N, m));
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
